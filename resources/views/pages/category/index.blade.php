@@ -107,7 +107,6 @@ body {
             <div class="header">
                 <h2>Admin Panel</h2>
                 <div class="profile">
-                    <img src="{{ asset('images/profile.jpg') }}" alt="Profile">
                     <span class="profile-name">Admin Name</span>
                 </div>
             </div>
