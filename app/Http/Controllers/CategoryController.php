@@ -16,7 +16,8 @@ class CategoryController extends Controller
     
     public function index()
     {
-        
+        $response['categories'] = $this->category->all();
+        return view('pages.category.index')->with($response);
     }
     
 
