@@ -10,51 +10,133 @@
 <style>
     /* admin.css */
 
-/* Body settings */
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f6f9; /* Background color */
-    font-family: Arial, sans-serif;
-}
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f6f9;
+        margin: 0;
+    }
 
-/* Centered panel styling */
-.centered-panel {
-    background-color: white;
-    padding: 30px;
-    width: 500px; /* Set a width for the admin panel */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a light shadow for depth */
-    border-radius: 8px; /* Slightly rounded corners */
-}
+    .container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+    }
 
-/* Profile header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd; /* Separator line */
-}
+    /* Sidebar styles */
+    .sidebar {
+        width: 200px;
+        background-color: #343a40;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
 
-.header h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #343a40; /* Text color */
-}
+    .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.profile-name {
-    font-weight: bold;
-}
+    .sidebar ul li {
+        margin: 20px 0;
+    }
 
-/* Content area */
-main {
-    margin-top: 20px;
-}
+    .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+    }
 
+    .sidebar ul li a:hover {
+        background-color: #495057;
+    }
+
+    /* Content styles */
+    .content {
+        flex: 1;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+    .content h1 {
+        font-size: 24px;
+    }
+
+    /* Header styling for added profile section */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #343a40;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .header .profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .profile img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .header .profile-name {
+        font-weight: bold;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .header h2 {
+            margin-bottom: 10px;
+        }
+
+        .header .profile {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .header h2 {
+            font-size: 18px;
+        }
+
+        .sidebar ul li a {
+            padding: 8px;
+        }
+
+        .content h1 {
+            font-size: 20px;
+        }
+    }
 
 </style>
 <body>
