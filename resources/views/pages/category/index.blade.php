@@ -10,83 +10,51 @@
 <style>
     /* admin.css */
 
+/* Body settings */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f6f9;
-}
-
-.container {
-    display: flex;
-    height: 100vh;
-}
-
-/* Sidebar styles */
-.sidebar {
-    width: 200px;
-    background-color: #343a40;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar ul {
-    list-style-type: none;
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f9; /* Background color */
+    font-family: Arial, sans-serif;
 }
 
-.sidebar ul li {
-    margin: 20px 0;
+/* Centered panel styling */
+.centered-panel {
+    background-color: white;
+    padding: 30px;
+    width: 500px; /* Set a width for the admin panel */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a light shadow for depth */
+    border-radius: 8px; /* Slightly rounded corners */
 }
 
-.sidebar ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.sidebar ul li a:hover {
-    background-color: #495057;
-}
-
-/* Content styles */
-.content {
-    flex: 1;
-    padding: 20px;
-    background-color: #fff;
-}
-
-.content h1 {
-    font-size: 24px;
-}
-
-/* Header styling for added profile section */
+/* Profile header */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #343a40;
-    color: white;
-    padding: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Separator line */
 }
 
-.header .profile {
-    display: flex;
-    align-items: center;
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #343a40; /* Text color */
 }
 
-.header .profile img {
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-}
-
-.header .profile-name {
+.profile-name {
     font-weight: bold;
 }
+
+/* Content area */
+main {
+    margin-top: 20px;
+}
+
 
 </style>
 <body>
