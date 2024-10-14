@@ -157,7 +157,7 @@
             <div class="header">
                 <h2>Admin Panel</h2>
                 <div class="profile">
-                    <span class="profile-name">Admin Name</span>
+                    <span class="profile-name">E-commerce</span>
                 </div>
             </div>
             <main>
