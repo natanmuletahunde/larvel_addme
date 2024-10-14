@@ -6,11 +6,19 @@ use Illuminate\Http\Request;
 
 class CategoryController extends Controller
 {
-   protected $category;
+    protected $category;
+
+    public function __construct()
+    {
+        
+        $this->category = new Category(); 
+    }
+    
     public function index()
     {
-        //
+        
     }
+    
 
     /**
      * Show the form for creating a new resource.
